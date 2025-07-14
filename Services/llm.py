@@ -2,7 +2,7 @@
 from langchain_openai import ChatOpenAI
 
 
-class llm:
+class LLM:
 
     def __init__(self):
         self.model = ChatOpenAI(model="gpt-4o", temperature = 0)

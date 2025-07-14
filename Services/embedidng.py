@@ -2,7 +2,7 @@
 from langchain_openai import OpenAIEmbeddings
 
 
-class embedding:
+class Embedding :
 
     def __init__(self):
         

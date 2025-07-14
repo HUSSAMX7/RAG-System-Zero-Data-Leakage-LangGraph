@@ -4,21 +4,22 @@ from langchain_core.embeddings import Embeddings
 from langchain_core.documents import Document
 from typing import List, Optional
 import shutil
+from embedidng import Embedding
 
 
 
 class VectorStoreService:
-    def __init__(self, assistant_id: str, file_path: str, embed_model: Embeddings):
-        self.assistant_id = assistant_id
+    def __init__(self, file_path: str):
         self.file_path = file_path
-        self.embed_model = embed_model
+        self.embed_model = Embedding().get_embedding()
         self.vectorstore_path = self._build_vectorstore_path()
+
 
 
     def _build_vectorstore_path(self) -> str:
         
         file_name = os.path.splitext(os.path.basename(self.file_path))[0]
-        path = os.path.join("VectorStorage",str(self.assistant_id),file_name)
+        path = os.path.join("VectorStorage",file_name)
         os.makedirs(path,exist_ok=True)
 
         return path
@@ -51,14 +52,14 @@ class VectorStoreService:
         return os.path.exists(index_path)
     
     @staticmethod
-    def delete_by_file_name(assistant_id:str, file_name:str):
+    def delete_by_file_name(file_name:str):
         
         """
         Delete a specific vectorstore by category and file name (without extension).
         Example: category="hr", file_name="ai_eng" -> VectorStorage/hr/ai_eng/
         """
         
-        path = os.path.join("VectorStorage", str(assistant_id), file_name)
+        path = os.path.join("VectorStorage", file_name)
         if os.path.exists(path):
             shutil.rmtree(path)
             print(f" Deleted vectorstore at: {path}")
