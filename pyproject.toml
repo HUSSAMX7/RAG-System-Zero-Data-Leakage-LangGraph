@@ -1,7 +1,31 @@
 [project]
-name = "langgraph"
+name = "langgraph_add"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "chromadb>=1.0.12",
+    "google>=3.0.0",
+    "google-genai>=1.19.0",
+    "ipykernel>=6.29.5",
+    "ipython>=9.3.0",
+    "langchain>=0.3.25",
+    "langchain-chroma>=0.2.4",
+    "langchain-community>=0.3.25",
+    "langchain-google-genai>=2.1.5",
+    "langchain-huggingface>=0.3.0",
+    "langchain-ollama>=0.3.4",
+    "langchain-openai>=0.3.23",
+    "langchain-qdrant>=0.2.0",
+    "langgraph>=0.4.8",
+    "langgraph-checkpoint-redis>=0.0.6",
+    "ollama>=0.5.1",
+    "prompt>=0.4.1",
+    "prompts>=0.0.1",
+    "pypdf>=5.8.0",
+    "python-dotenv>=1.1.0",
+    "qdrant-client>=1.14.3",
+    "sentence-transformers>=5.0.0",
+    "streamlit>=1.45.1",
+]
