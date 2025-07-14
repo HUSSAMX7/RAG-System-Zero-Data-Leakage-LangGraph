@@ -38,8 +38,7 @@ This project was built to **completely eliminate that risk**:
 
 ```bash
 # Clone the repo
-git clone [https://github.com/YOUR_USERNAME/RAG-System-Zero-Data-Leakage-LangGraph.git
-cd RAG-System-Zero-Data-Leakage-LangGraph](https://github.com/HUSSAMX7/RAG-System-Zero-Data-Leakage-LangGraph.git)
+git clone https://github.com/HUSSAMX7/RAG-System-Zero-Data-Leakage-LangGraph.git
 
 # Install uv if you haven't
 pip install uv
