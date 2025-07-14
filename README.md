@@ -29,6 +29,9 @@ This project was built to **completely eliminate that risk**:
 -  **Local VectorStore**: Efficient and isolated using `Chroma`.
 -  **Zero API keys required**: Fully air-gapped if needed.
 -  **Production-ready structure**: Designed for easy expansion.
+  
+## Need a Custom Version?
+- Contact me directly for custom development
 
 ---
 
