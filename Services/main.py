@@ -4,13 +4,13 @@ from langchain.memory import ConversationSummaryMemory
 
 load_dotenv()
 
-from zservices.llm import get_llm
-from zservices.embeddings import get_embeddings
-from zservices.load import DocumentLoader
-from zservices.text_splitter import split_documents
-from zservices.vectorstore import VectorStore
-from zservices.tool_retriever import create_retriever_tool
-from zservices.build_graph import build_graph
+from services.llm import get_llm
+from services.embeddings import get_embeddings
+from services.load import DocumentLoader
+from services.text_splitter import split_documents
+from services.vectorstore import VectorStore
+from services.tool_retriever import create_retriever_tool
+from services.build_graph import build_graph
 
 llm = get_llm()
 
